@@ -11,11 +11,11 @@ function App(props) {
       {props.loading && <div>loading...</div>}
       {props.apod && (
       <div>
-        <img src={props.apod.url}/>
+        <img class="image" src={props.apod.url}/>
       <p>{props.apod.explination}</p>
       </div>)}
       {/* {props.error !== "" && <p>{error}</p>} */}
-      <button onClick={props.getApod}>Get Photo Of The Day</button>
+      <button class="btn" onClick={props.getApod}>Get Photo Of The Day</button>
     </div>
   );
 }
