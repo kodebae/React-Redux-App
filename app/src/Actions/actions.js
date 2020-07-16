@@ -5,7 +5,7 @@ export const FETCH_APOD_START = 'FETCH_APOD_START';
 export const FETCH_APOD_SUCCESS = 'FETCH_APOD_SUCCESS';
 export const FETCH_APOD_FAILURE = 'FETCH_APOD_FAILURE';
 
-//how to write our thunk *line 7...
+//how to write our thunk *line 7... demo app
 
 export const getApod = () => dispatch => {
     dispatch({type: FETCH_APOD_START})
