@@ -3,17 +3,17 @@
 }
 
 body{
-  background-color: aqua;
+  background-color: white;
 }
 
 h1{
-  color: white;
-  text-shadow: 2px 2px 5px blue;
+  color: darkblue;
+  text-shadow: 2px 2px 3px grey;
 }
 
 .btn {
-  background-color: blue; 
-  border: none;
+  background-color: red;
+  border: white solid 2px;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -35,6 +35,15 @@ h1{
   }
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    /*align-content: center;*/
+    /*width: 60%;*/
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -49,12 +58,5 @@ h1{
 .App-link {
   color: #61dafb;
 }
-/* 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+
+

@@ -10,12 +10,14 @@ function App(props) {
       <h1>NASA Photo Of The Day</h1>
       {props.loading && <div>loading...</div>}
       {props.apod && (
-      <div>
+      <div class="container">
+
         <img class="image" src={props.apod.url}/>
-      <p>{props.apod.explination}</p>
+        <h3 class="img-title">{props.apod.title}</h3>
+        <p class="explain">{props.apod.explanation}</p>
       </div>)}
       {/* {props.error !== "" && <p>{error}</p>} */}
-      <button class="btn" onClick={props.getApod}>Get Photo Of The Day</button>
+      <button class="btn" onClick={props.getApod}>Get Today's NASA Photo</button>
     </div>
   );
 }
